@@ -1,0 +1,106 @@
+@import url('./variables.less');
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  height: 100vh;
+}
+
+.container {
+  .flex-column();
+  height: 100%;
+  margin: auto;
+  align-items: center;
+
+  @media (min-width: @screenSm) {
+    max-width: 640px;
+  }
+  @media (min-width: @screenMd) {
+    max-width: 800px;
+  }
+}
+
+.error {
+  margin: auto;
+}
+
+.loading {
+  margin: auto;
+}
+
+.menu {
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+
+  @media (max-width: @screenSm) {
+    width: @smScreenW;
+    flex-direction: column;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.card-container {
+  border: @border;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px 20px 2px #c5c5c5;
+  
+  @media (max-width: @screenSm) {
+    flex-direction: column;
+    width: @smScreenW;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    .flex-column();
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 24px;
+    padding: 30px 0;
+    &:not(:last-child) {
+      border-right: @border;
+
+      @media (max-width: @screenSm) {
+        border-right: unset;
+        border-bottom: @border;
+      }
+    }
+  }
+
+  .today-card {
+    .flex-column();
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    width: 100%;
+    flex-grow: 4;
+    padding: 36px 0;
+    border-bottom: @border;
+
+    .today-details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .today-info {
+      .flex-column();
+      font-size: 32px;
+    }
+  
+    .today-temp {
+      font-size: 60px;
+    }
+  }
+}

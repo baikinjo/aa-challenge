@@ -10,8 +10,8 @@ interface WeatherCardsProps {
 const getDate = (dt: Weather['dt']) =>
   new Date(dt * 1000).toLocaleString('en-us', { weekday: 'short' });
 
-const WeatherIcon = (weather: Weather['weather'], size = 120) =>
-  <img width={size} src={`${IMAGE_URL}/${weather[0].icon}@2x.png`} alt={weather[0].description} />;
+const WeatherIcon = (weather: Weather['weather'], width = 120) =>
+  <img width={width} src={`${IMAGE_URL}/${weather[0].icon}@2x.png`} alt={weather[0].description} />;
 
 const TodayCard = (item: Weather) => (
   <div className='today-card'>

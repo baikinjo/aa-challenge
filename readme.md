@@ -1,5 +1,9 @@
 # Take-home challenge
 
+## Demo
+Deployed on Vercel: https://aa-challenge-baikinjo.vercel.app/
+
+
 ### Start up
 
 ````
@@ -17,3 +21,8 @@ npm run dev
 ### Resources
 - [OpenWeather Daily Forecast 16 Days API](https://openweathermap.org/forecast16)
 - [OpenWeather Conditions Images](https://openweathermap.org/weather-conditions)
+- [Montserrat Google Font](https://fonts.google.com/specimen/Montserrat?query=Montserrat)
+
+
+### Stack
+- React, Typescript, Vite, Less

@@ -10,7 +10,7 @@ export const CITIES: City[] = [
 
 /**
  * Dangerous approach, exposing secret key to public
- * For the sake of this challenge I'm leaving it as a constant
- * In real-life case it should be hidden as environment variable
+ * For the sake of this challenge I'm leaving it as a constant however,
+ * In regular basis, it should be stored as environment variable
  */
 export const API_KEY = '9461adbcc99edc6bc9077526bd2dd247'
